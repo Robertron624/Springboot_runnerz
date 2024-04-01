@@ -33,6 +33,8 @@ public class RunJsonDataLoader implements CommandLineRunner {
            } catch (Exception e) {
                log.error("Failed to load JSON data", e);
            }
+        } else {
+            log.info("Not loading Runs from JSON data because the collection contains data");
         }
     }
 }
